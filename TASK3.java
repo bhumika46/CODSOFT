@@ -22,7 +22,7 @@ public class ATMInterface
                 switch(choice)  
                 {  
                     case 1:  
-                        System.out.print("Enter money to be withdrawn:");  
+                        System.out.print("Enter how much amount you want to withdrawn : ");  
                         withdraw = sc.nextInt();  
                         if(balance >= withdraw)  
                         {  
@@ -37,15 +37,15 @@ public class ATMInterface
                     break;  
    
                     case 2:    
-                        System.out.print("Enter money to be deposited:");  
+                        System.out.print("Enter how much amount you want to deposit : ");  
                         deposit = sc.nextInt();  
                         balance = balance + deposit;  
-                        System.out.println("Your Money has been successfully depsited");  
+                        System.out.println("Your Money has been Successfully deposited");  
                         System.out.println("");  
                         break;  
    
                     case 3:   
-                    System.out.println("Balance : "+balance);  
+                    System.out.println("Current Balance : "+balance);  
                     System.out.println("");  
                     break;  
    
@@ -57,4 +57,5 @@ public class ATMInterface
        
     }  
    
-}
+}  
+
